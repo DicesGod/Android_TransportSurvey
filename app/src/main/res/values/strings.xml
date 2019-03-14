@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MidTermExam_MinhLe</string>
+    <string name="textView1">Transport Survey</string>
+    <string name="textView2">Client number :</string>
+    <string name="textView3">Type of transport :</string>
+    <string name="textView4">Number of km per day :</string>
+    <string name="radioButtonBus">Bus</string>
+    <string name="radioButtonMetro">Metro</string>
+    <string name="radioButtonPrivate">Private Transport</string>
+    <string name="radioButtonTaxi">Taxi</string>
+    <string name="btnSave">Save</string>
+    <string name="btnNew">New</string>
+    <string name="btnEnd">End</string>
+    <string name="btnGo">Go</string>
+    <string name="textView5">Admin Password:</string>
+    <string name="btnLoad">Load</string>
+    <string name="textView6">Summary Results</string>
+    <string name="TypeofTransport">Type of transport</string>
+    <string name="ClientKm">Total Client/NbKm</string>
+    <string name="percent">Percentage Client</string>
+    <string name="BusMetro">Bus/Metro</string>
+    <string name="PrivateTaxi">Private/Taxi</string>
+    <string name="btnReturn">Return</string>
+</resources>
