@@ -125,7 +125,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                             trans_type,
                             Integer.parseInt(EditTextNumberofKm.getText().toString()));
                     ListofSurvey.add(survey);
-                    Snackbar.make(v, "Replace with your own action",
+                    Snackbar.make(v, survey.toString(),
                             Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
 
