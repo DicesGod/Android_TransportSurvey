@@ -44,29 +44,23 @@ public class Survey implements Serializable {
     @Override
     public String toString() {
         if(trans_type == 1)
-        return "Survey{" +
-                "Client Number = " + clientNumber +
+        return "Client Number = " + clientNumber +
                 ", Trans_Type = Bus" +
-                ", Number of km = " + numberofkm +
-                '}';
+                ", Number of km = " + numberofkm;
         else if (trans_type == 2)
-            return "Survey{" +
-                    "Client Number = " + clientNumber +
+            return "Client Number = " + clientNumber +
                     ", Trans_Type = Metro" +
-                    ", Number of km = " + numberofkm +
-                    '}';
+                    ", Number of km = " + numberofkm;
         else if (trans_type == 3)
-            return "Survey{" +
-                    "Client Number = " + clientNumber +
+            return "Client Number = " + clientNumber +
                     ", Trans_Type = Private Transport" +
-                    ", Number of km = " + numberofkm +
-                    '}';
+                    ", Number of km = " + numberofkm
+                   ;
         else
-            return "Survey{" +
-                    "clientNumber = " + clientNumber +
+            return "clientNumber = " + clientNumber +
                     ", Trans_Type = Taxi" +
-                    ", numberofkm = " + numberofkm +
-                    '}';
+                    ", numberofkm = " + numberofkm
+                    ;
 
     }
 }

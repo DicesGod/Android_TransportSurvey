@@ -22,6 +22,13 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
     ArrayList ListofSurvey;
     static ArrayList ListofClient;
 
+    enum Trans_type{
+        Bus,
+        Metro,
+        Private_Transport,
+        Taxi
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,19 +113,19 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
                     switch (radiobuttonID) {
                         case R.id.radioButtonBus:
-                            trans_type = 1;
+                            trans_type = Trans_type.Bus.ordinal()+1;
                             break;
 
                         case R.id.radioButtonMetro:
-                            trans_type = 2;
+                            trans_type = Trans_type.Metro.ordinal()+1;
                             break;
 
                         case R.id.radioButtonPrivate:
-                            trans_type = 3;
+                            trans_type = Trans_type.Private_Transport.ordinal()+1;
                             break;
 
                         case R.id.radioButtonTaxi:
-                            trans_type = 4;
+                            trans_type = Trans_type.Taxi.ordinal()+1;
                             break;
                     }
                     Survey survey = new Survey(Integer.parseInt(EditTextClientNumber.getText().toString()),
@@ -128,6 +135,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                     Snackbar.make(v, survey.toString(),
                             Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
+
 
                 }
                 catch (Exception e)
